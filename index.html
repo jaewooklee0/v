@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script> <!-- Include JavaScript file -->
+</head>
+<body>
+  <header class="casino-header">
+    <h1 class="casino-logo">Casino</h1>
+    <div class="balance-container">
+      <div class="balance-info">
+        <span class="balance-icon">🟡</span>
+        <span id="balance">$0.00</span> <!-- Add an ID for JS -->
+      </div>
+      <button class="add-funds-btn" onclick="addFunds()">Add</button> <!-- Call addFunds() -->
+    </div>
+    <div class="search-container">
+      <div class="search-icon">
+        <div class="search-icon-inner"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="blackjack.html">Blackjack</a></li>
+        <li><a href="#">Plinko</a></li>
+        <li><a href="#">Roulette</a></li>
+      </ul>
+    </nav>
+
+    <section class="games-container">
+      <div class="featured-game"></div>
+      <h2 class="games-title">Games</h2>
+      <div class="game-grid">
+        <article class="game-card">PLINKO</article>
+        <article class="game-card" id="blackjack-game" onclick="startBlackjack()">BLACKJACK</article> <!-- Link to Blackjack -->
+        <article class="game-card">ROULETTE</article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
